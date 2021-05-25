@@ -1,0 +1,43 @@
+#homeMovies {
+    padding-top: 75px;
+}
+
+.mainMaxWidth {
+    max-width: 940px;
+    float: none;
+    margin: auto;
+    clear: both;
+}
+
+.nav-tabs {
+    justify-content: center;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.navCenter li.active a {
+    font-size: 24px;
+}
+
+ .navCenter a {
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.nav-tabs.navCenter li.active a {
+    color: #fa5238;
+}
+
+.nav-tabs.navCenter li a {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    transition: all .2s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#homeMovies .navCenter a:hover {
+    font-size: 24px;
+}

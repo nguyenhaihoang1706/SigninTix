@@ -4,6 +4,7 @@ import img from "../../assets/img/web-logo.png";
 import imgLogin from "../../assets/img/avatar.png";
 import imgLocation from "../../assets/img/location-header.png";
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
@@ -54,7 +55,11 @@ export default class Header extends Component {
                 </div>
                 <div className="navbar-nav right ">
                   <div className="account">
-                    <a className="nav-link active" aria-current="page" href="#">
+                    <NavLink
+                      className="nav-link active"
+                      aria-current="page"
+                      to="/login"
+                    >
                       <img
                         className="rounded-circle"
                         style={{ height: 30, width: 30 }}
@@ -63,7 +68,7 @@ export default class Header extends Component {
                       <p style={{ display: "inline-block", marginLeft: 10 }}>
                         Đăng nhập
                       </p>
-                    </a>
+                    </NavLink>
                   </div>
                   <div
                     id="dropdownMenuLink"

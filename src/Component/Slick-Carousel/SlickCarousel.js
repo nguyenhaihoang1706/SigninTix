@@ -25,7 +25,7 @@ export default class SlickCarousel extends Component {
     };
 
     return (
-      <div>
+      <div id='slickCarousel'>
         <Slider {...settings}>
           <div>
             <img src={latMat} />

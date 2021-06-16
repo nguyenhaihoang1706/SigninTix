@@ -5,9 +5,15 @@ import imgLogin from "../../assets/img/avatar.png";
 import imgLocation from "../../assets/img/location-header.png";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-export default class Header extends Component {
-  render() {
+export default function Header () {
+
+  const { tenLogin } = useSelector((state) => state.NguoiDungReduces);
+
+
+
+
     return (
       <div>
         <header>
@@ -66,7 +72,7 @@ export default class Header extends Component {
                         src={imgLogin}
                       />
                       <p style={{ display: "inline-block", marginLeft: 10 }}>
-                        Đăng nhập
+                        {tenLogin.trim() !== "" ? tenLogin : "dang nhap"}
                       </p>
                     </NavLink>
                   </div>
@@ -830,5 +836,4 @@ export default class Header extends Component {
         </header>
       </div>
     );
-  }
 }

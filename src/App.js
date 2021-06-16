@@ -5,10 +5,15 @@ import {BrowserRouter, Route,Switch} from 'react-router-dom'
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 
+import {createBrowserHistory} from 'history'
+export const history = createBrowserHistory(); //Cho phép điều hướng trang
+
+
 function App() {
+  
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter history={history}>
         <Switch>
           <Route path="/home" exact component={Home} />
           <Route path="/login" exact component={Login} />

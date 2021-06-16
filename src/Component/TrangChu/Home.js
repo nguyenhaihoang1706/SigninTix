@@ -7,6 +7,7 @@ import Login from "../../Pages/Login/Login";
 import Footer from "../../Pages/Footer/Footer";
 import HomeApp from "../../Pages/HomeApp/HomeApp";
 import Register from "../../Pages/Register/Register";
+import DatVe from "../DatVe/DatVe";
 
 
 
@@ -23,9 +24,10 @@ export default class Home extends Component {
 
         <Footer/>
 
-        <HomeApp/> */}
-        <Login/>
+        <HomeApp/> 
+        <Login/> */}
         {/* <Register/> */}
+        <DatVe/>
        </div>
     );
   }
